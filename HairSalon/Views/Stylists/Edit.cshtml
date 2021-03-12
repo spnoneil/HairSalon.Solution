@@ -10,14 +10,15 @@
 
 @using (Html.BeginForm())
 {
-  @Html.LabelFor(model => model.Name)
-  @Html.TextBoxFor(model => model.Name)
-  @Html.LabelFor(model => model.Speciality)
-  @Html.TextBoxFor(model => model.Speciality)
-  @Html.LabelFor(model => model.PhoneNumber)
-  @Html.TextBoxFor(model => model.PhoneNumber)
-  @Html.LabelFor(model => model.HourlyRate)
-  @Html.TextBoxFor(model => model.HourlyRate)
+  @Html.HiddenFor(model => model.StylistId)
+  @Html.LabelFor(model => model.Name, "Stylist Name")
+  @Html.EditorFor(model => model.Name, new { @class = "form-control", placeholder = "Enter name here", required = "required"})
+  @Html.LabelFor(model => model.Speciality, "Stylist Speciality")
+  @Html.EditorFor(model => model.Speciality, new { @class = "form-control", placeholder = "Enter stylist's speciality here", required = "required"})
+  @Html.LabelFor(model => model.PhoneNumber, "Stylist Phone Number")
+  @Html.EditorFor(model => model.PhoneNumber, new { @class = "form-control", placeholder = "Enter stylist phone number here", required = "required"})
+  @Html.LabelFor(model => model.HourlyRate, "Stylist's Hourly Rate")
+  @Html.EditorFor(model => model.HourlyRate, new { @class = "form-control", placeholder = "Enter the stylist's hourly charge rate here", required = "required"})
     <input type="submit" value="Save" />
 }
 <p>@Html.ActionLink("Back to stylist list", "Index")</p>
