@@ -24,5 +24,6 @@
 </ul>
 
 <p>@Html.ActionLink("Back to stylist list", "Index")</p>
-@* EDIT *@
-@* DELETE *@ 
+<p>@Html.ActionLink("Edit stylist", "Edit", new { id = Model.Stylistd })</p>
+<p>@Html.ActionLink("Delete stylist", "Delete", new { id = Model.Stylistd })</p>
+<p>@Html.ActionLink("Go home!", "Index", "Home")</p>
