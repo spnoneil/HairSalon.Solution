@@ -9,3 +9,29 @@
   bottom: 0;
   left: 0;
 }
+
+a {
+  color: aliceblue;
+}
+
+.sitenav {
+  margin: 20px;
+  padding: 10px;
+  border: 3px solid red;
+  background-color: aqua;
+  border-radius: 25px 0 25px 0;
+}
+
+p {
+  display: block;
+  margin: 20px;
+}
+
+.container {
+  background: rgb(2, 0, 36);
+  background: radial-gradient(circle, rgba(2, 0, 36, 1) 15%, rgba(8, 31, 135, 1) 27%, rgba(0, 212, 255, 1) 56%, rgba(22, 22, 43, 1) 79%);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  bottom: 0%;
+}

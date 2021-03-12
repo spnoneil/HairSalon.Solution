@@ -9,7 +9,9 @@
   <body>
     <div class="container">
       @Html.Partial("_Header")
-      @RenderBody()
+      <div class="mainbody">
+        @RenderBody()
+      </div>
       @Html.Partial("_Footer")
       </div>
   </body>

@@ -17,5 +17,5 @@
     <li>@Html.ActionLink($"{stylist.Name}", "Details", new { id = stylist.StylistId })</li>
   }
 
-<p>@Html.ActionLink("Add new stylist", "Create")</p>
-<p>@Html.ActionLink("Go home!", "Index", "Home")</p>
+<p>@Html.ActionLink("Add new stylist", "Create", null, null, new { @class = "sitenav"})</p>
+<p>@Html.ActionLink("Go home!", "Index", "Home", null, new { @class = "sitenav"})</p>

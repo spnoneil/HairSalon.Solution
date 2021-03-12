@@ -12,11 +12,11 @@
   @Html.LabelFor(model => model.Speciality, "Stylist Speciality")
   @Html.TextBoxFor(model => model.Speciality, new { @class = "form-control", placeholder = "Enter stylist's speciality here", required = "required"})
   @Html.LabelFor(model => model.PhoneNumber, "Stylist Phone Number")
-  @Html.TextBoxFor(model => model.PhoneNumber, new { @class = "form-control", placeholder = "Enter stylist phone number here", required = "required"})
+  @Html.TextBoxFor(model => model.PhoneNumber, new { @class = "form-control", placeholder = "Enter stylist phone number here (xxx-xxx-xxxx)", required = "required"})
   @Html.LabelFor(model => model.HourlyRate, "Stylist's Hourly Rate")
   @Html.TextBoxFor(model => model.HourlyRate, new { @class = "form-control", placeholder = "Enter the stylist's hourly charge rate here", required = "required"})
   <input type="submit" value="Add a new stylist" />
 }
 
-<p>@Html.ActionLink("Show all stylists", "Index")</p>
-<p>@Html.ActionLink("Go home!", "Index", "Home")</p>
+<p>@Html.ActionLink("Show all stylists", "Index", null, null, new { @class = "sitenav"})</p>
+<p>@Html.ActionLink("Go home!", "Index", "Home", null, new { @class = "sitenav"})</p>

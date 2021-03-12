@@ -2,7 +2,6 @@
   Layout = "_Layout";
 }
 
-<h1>Welcome to yr Salon Control Panel, Claire!</h1>
 <hr>
-<p>@Html.ActionLink("See all clients", "Index", "Clients")</p> 
-<p>@Html.ActionLink("See all stylists", "Index", "Stylists")</p>
+<p>@Html.ActionLink("See all clients", "Index", "Clients", null, new { @class = "sitenav"})</p>
+<p>@Html.ActionLink("See all stylists", "Index", "Stylists", null, new { @class = "sitenav"})</p>

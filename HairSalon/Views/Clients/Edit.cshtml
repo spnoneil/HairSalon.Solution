@@ -23,5 +23,5 @@
   <input type="submit" value="Save" />
 }
 
-<p>@Html.ActionLink("Back to client list", "Index")</p>
-<p>@Html.ActionLink("Go home!", "Index", "Home")</p>
+<p>@Html.ActionLink("Back to client list", "Index", null, new { @class = "sitenav"})</p>
+<p>@Html.ActionLink("Go home!", "Index", "Home", null, new { @class = "sitenav"})</p>

@@ -11,7 +11,7 @@
 <h3>@Html.DisplayNameFor(model => model.Notes): @Html.DisplayFor(model => model.Notes)<h3>
 
 
-<p>@Html.ActionLink("Back to client list", "Index")</p>
-<p>@Html.ActionLink("Edit this client", "Edit", new { id = Model.ClientId })</p>
-<p>@Html.ActionLink("Delete this client", "Delete", new { id = Model.ClientId })</p>
-<p>@Html.ActionLink("Go home!", "Index", "Home")</p>
+<p>@Html.ActionLink("Back to client list", "Index", null, null, new { @class = "sitenav"})</p>
+<p>@Html.ActionLink("Edit this client", "Edit", new { id = Model.ClientId }, new { @class = "sitenav"})</p>
+<p>@Html.ActionLink("Delete this client", "Delete", new { id = Model.ClientId }, new { @class = "sitenav"})</p>
+<p>@Html.ActionLink("Go home!", "Index", "Home", null, new { @class = "sitenav"})</p>

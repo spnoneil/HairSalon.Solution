@@ -23,7 +23,7 @@
 }
 </ul>
 
-<p>@Html.ActionLink("Back to stylist list", "Index")</p>
-<p>@Html.ActionLink("Edit stylist", "Edit", new { id = Model.StylistId })</p>
-<p>@Html.ActionLink("Delete stylist", "Delete", new { id = Model.StylistId })</p>
-<p>@Html.ActionLink("Go home!", "Index", "Home")</p>
+<p>@Html.ActionLink("Back to stylist list", "Index", null, null, new { @class = "sitenav"})</p>
+<p>@Html.ActionLink("Edit stylist", "Edit", null, new { id = Model.StylistId }, new { @class = "sitenav"})</p>
+<p>@Html.ActionLink("Delete stylist", "Delete", null, new { id = Model.StylistId }, new { @class = "sitenav"})</p>
+<p>@Html.ActionLink("Go home!", "Index", "Home", null, new { @class = "sitenav"})</p>

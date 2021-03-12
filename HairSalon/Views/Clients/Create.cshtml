@@ -19,5 +19,5 @@
 
   <input type="submit" value="Add new client" class="btn btn-success" />
 }
-<p>@Html.ActionLink("Show all clients", "Index")</p>
-<p>@Html.ActionLink("Go home!", "Index", "Home")</p>
+<p>@Html.ActionLink("Show all clients", "Index", null, new { @class = "sitenav"})</p>
+<p>@Html.ActionLink("Go home!", "Index", "Home", null, new { @class = "sitenav"})</p>
