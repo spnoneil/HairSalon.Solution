@@ -4,6 +4,6 @@ dist/
 coverage/
 */obj/
 */bin/
-*/whiteboard.txt
 .vscode
 */appsettings.json
+whiteboard.txt
