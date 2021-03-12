@@ -1,3 +1,9 @@
+.jumbotron {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(175deg, rgba(255, 255, 255, 1) 4%, rgba(8, 106, 134, 1) 51%);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
 .footer {
   text-align: center;
   font-size: large;
@@ -10,15 +16,21 @@
   left: 0;
 }
 
-a {
-  color: aliceblue;
+.sitenav,
+.button {
+  margin-top: 35px;
+  margin-bottom: 50px;
+  padding: 10px;
+  border: 3px solid rgb(156, 203, 224);
+  background-color: aqua;
+  border-radius: 25px 0 25px 0;
+  color: rgba(8, 31, 135, 1) !important;
 }
 
-.sitenav {
-  margin: 20px;
-  padding: 10px;
-  border: 3px solid red;
-  background-color: aqua;
+.button {
+  color: rgb(253, 253, 253);
+  border: 3px solid rgb(156, 203, 224);
+  background-color: rgb(255, 0, 21);
   border-radius: 25px 0 25px 0;
 }
 
@@ -27,11 +39,21 @@ p {
   margin: 20px;
 }
 
-.container {
+body {
   background: rgb(2, 0, 36);
-  background: radial-gradient(circle, rgba(2, 0, 36, 1) 15%, rgba(8, 31, 135, 1) 27%, rgba(0, 212, 255, 1) 56%, rgba(22, 22, 43, 1) 79%);
+  background: radial-gradient(circle, rgba(2, 0, 36, 1) 15%, rgba(8, 31, 135, 1) 27%, rgb(5, 154, 184) 56%, rgba(22, 22, 43, 1) 79%);
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: center;
-  bottom: 0%;
+  background-attachment: fixed;
+  bottom: 0;
+  color: aliceblue;
+}
+
+a {
+  color: aliceblue;
+}
+
+.mainbody a:link {
+  color: violet;
 }

@@ -5,11 +5,14 @@
 @using Salon.Models;
 @model Salon.Models.Stylist;
 
-@* add stylist name below??????????????? *@
+<h3>Stylist Name: @Html.DisplayFor(model => model.Name)</h3>
+<h5>@Html.DisplayFor(model => model.PhoneNumber)</h5>
+<h5>Speciality: @Html.DisplayFor(model => model.Speciality)</h5>
+<h5>Hourly Rate: @Html.DisplayFor(model => model.HourlyRate)</h5>
 
-<h1>Upcoming appointments:</h1>
+
+<h4>Upcoming appointments:</h4>
 <br>
-<h3>@Html.DisplayNameFor(model => model.Name) : @Html.DisplayFor(model => model.Name)</h3>
 
 <ul>
 @if (Model.Clients.Count == 0)

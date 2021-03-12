@@ -18,7 +18,7 @@
   @Html.LabelFor(model => model.PhoneNumber, "Stylist Phone Number")
   @Html.EditorFor(model => model.PhoneNumber, new { @class = "form-control", placeholder = "Enter stylist phone number here (xxx-xxx-xxxx)", required = "required"})
   @Html.LabelFor(model => model.HourlyRate, "Stylist's Hourly Rate")
-  @Html.EditorFor(model => model.HourlyRate, new { @class = "form-control", placeholder = "Enter the stylist's hourly charge rate here", required = "required"})
+  @Html.EditorFor(model => model.HourlyRate, new { @class = "form-control", placeholder = "Enter the stylist's hourly charge rate here", required = "required", type = "number"})
     <input type="submit" value="Save" />
 }
 <p>@Html.ActionLink("Back to stylist list", "Index", null, null, new { @class = "sitenav"})</p>
