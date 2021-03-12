@@ -1,0 +1,28 @@
+@{
+  Layout = "_Layout";
+}
+
+@using Salon.Models;
+@model Salon.Models.Stylist;
+
+@* add stylist name below??????????????? *@
+
+<h1>Upcoming appointments:</h1>
+<br>
+<h3>@Html.DisplayNameFor(model => model.Name) : @Html.DisplayFor(model => model.Name)</h3>
+
+<ul>
+@if (Model.Clients.Count == 0)
+{
+  <p>No upcoming appointments!</p>
+}
+
+@foreach (Client client in @Model.Clients)
+{
+  <li>Name: @client.Name<br>Phone Number: @client.PhoneNumber<br>Notes: @client.Notes</li>
+}
+</ul>
+
+<p>@Html.ActionLink("Back to stylist list", "Index")</p>
+@* EDIT *@
+@* DELETE *@
