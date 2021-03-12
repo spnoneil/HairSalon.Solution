@@ -25,7 +25,7 @@ namespace Salon
       services.AddMvc();
 
       services.AddEntityFrameworkMySql()
-        .AddDbContext<ToDoListContext>(options => options
+        .AddDbContext<SalonContext>(options => options
         .UseMySql(Configuration["ConnectionStrings:DefaultConnection"], ServerVersion.AutoDetect(Configuration["ConnectionStrings:DefaultConnection"])));
     }
 
