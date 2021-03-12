@@ -8,14 +8,14 @@
 
 @using (Html.BeginForm())
 {
-  @Html.LabelFor(model => model.Name)
-  @Html.TextBoxFor(model => model.Name)
-  @Html.LabelFor(model => model.PhoneNumber)
-  @Html.TextBoxFor(model => model.PhoneNumber)
-  @Html.LabelFor(model => model.Notes)
-  @Html.TextBoxFor(model => model.Notes)
-  @Html.LabelFor(model => model.Stylist)
-  @Html.DropDownList("StylistId")
+  @Html.LabelFor(model => model.Name, "Client Name")
+  @Html.TextBoxFor(model => model.Name, new { @class = "form-control", placeholder = "Enter name here", required = "required"})
+  @Html.LabelFor(model => model.PhoneNumber, "Client Phone Number")
+  @Html.TextBoxFor(model => model.PhoneNumber, new { @class = "form-control", placeholder = "Enter number here (xxx-xxx-xxxx)", required = "required"})
+  @Html.LabelFor(model => model.Notes, "Additional Notes on Client")
+  @Html.TextBoxFor(model => model.Notes, new { @class = "form-control", placeholder = "Enter additonal notes here", required = "required"})
+  @Html.LabelFor(model => model.Stylist, "Stylist Name")
+  @Html.DropDownListFor(model => model.StylistId, (IEnumerable<SelectListItem>)ViewBag.StylistId, new { @class = "form-control"})
 
   <input type="submit" value="Add new client" class="btn btn-success" />
 }
