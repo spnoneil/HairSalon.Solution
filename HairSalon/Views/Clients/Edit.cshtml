@@ -4,7 +4,9 @@
 
 @model Salon.Models.Client
 
-<h4>Add a new client</h4>
+<h2>Edit</h2>
+
+<h4>Edit this client: @Html.DisplayFor(model => model.Name)</h4>
 
 @using (Html.BeginForm())
 {
@@ -17,7 +19,8 @@
   @Html.LabelFor(model => model.Stylist)
   @Html.DropDownList("StylistId")
 
-  <input type="submit" value="Add new client" class="btn btn-success" />
+  <input type="submit" value="Save" />
 }
-<p>@Html.ActionLink("Show all clients", "Index")</p>
+
+<p>@Html.ActionLink("Back to client list", "Index")</p>
 <p>@Html.ActionLink("Go home!", "Index", "Home")</p>
